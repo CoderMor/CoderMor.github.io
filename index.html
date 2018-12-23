@@ -1,286 +1,340 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head><meta name="generator" content="Hexo 3.8.0">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>Esen‘s Blog</title>
+
+  
+  <meta name="author" content="Esen">
+  
+
+  
   <meta name="description" content="Android JAVA BLE 智能硬件">
-  <meta name="keyword" content="hexo-theme, vuejs">
-  
-    <link rel="shortcut icon" href="/css/images/logo.png">
-  
-  <title>
-    
-      Esen‘s Blog
-    
-  </title>
-  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/plugins/gitment.css">
-  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-  <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
-  <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
-  <script src="/js/qrious.js"></script>
-<script src="/js/gitment.js"></script>
-  
-  
-    <!-- MathJax support START -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <!-- MathJax support END -->
   
 
+  
 
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  
+
+  <meta property="og:site_name" content="Esen‘s Blog">
+
+  
+  <meta property="og:image" content="/favicon.ico">
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Esen‘s Blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 </head>
-<div class="wechat-share">
-  <img src="/css/images/logo.png">
-</div>
 
-  <body>
-    <header class="header fixed-header">
-  <div class="header-container">
-    <a class="home-link" href="/">
-      <div class="logo"></div>
-      <span>Esen‘s Blog</span>
-    </a>
-    <ul class="right-list">
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Esen‘s Blog</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
       
-        <li class="list-item">
-          
-            <a href="/" class="item-link active">Home</a>
-          
-        </li>
+        <li><a href="/">Home</a></li>
       
-        <li class="list-item">
-          
-            <a href="/tags/" class="item-link">Tags</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/archives/" class="item-link">Archives</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/project/" class="item-link">Projects</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/about/" class="item-link">About</a>
-          
-        </li>
+        <li><a href="/archives">Archives</a></li>
       
     </ul>
-    <div class="menu">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </div>
-    <div class="menu-mask">
-      <ul class="menu-list">
-        
-          <li class="menu-item">
-            
-              <a href="/" class="menu-link mobile-active">Home</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/tags/" class="menu-link">Tags</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/archives/" class="menu-link">Archives</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/project/" class="menu-link">Projects</a>
-            
-          </li>
-        
-          <li class="menu-item">
-            
-              <a href="/about/" class="menu-link">About</a>
-            
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+  </nav>
 </header>
 
-    <main class="app-body">
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/02/10/2018年了/">2018年了</a>
-      </h2>
-      <p class="article-date">February 10, 2018</p>
-      
-        
-  <a href="/tags#随笔">
-    <span class="tag-code">随笔</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          恍恍惚惚，一转眼18年又过了1个多月了，时间过得真快。
-
-        
-      </div>
-      <a class="more" href="/2018/02/10/2018年了/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2016/12/22/AI-人工智能/">AI-人工智能(长期编辑)</a>
-      </h2>
-      <p class="article-date">December 22, 2016</p>
-      
-      <div class="article-summary">
-        
-          一、什么是人工智能    关于人工智能想必大家基本是从2016Goole的Alpha GO大战韩国围棋顶级高手李世石开始有所关注吧，没错，我也是从这个时候才开始有所关注，本人也一直从事智能硬件行业，我们内部都将智能硬件称之为伪智能，因为这些硬件都是按照程序设定做相关简单的事情，说白了就是通过 ...
-        
-      </div>
-      <a class="more" href="/2016/12/22/AI-人工智能/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2016/08/25/恍恍惚惚大半年又过去了/">恍恍惚惚大半年又过去了</a>
-      </h2>
-      <p class="article-date">August 25, 2016</p>
-      
-        
-  <a href="/tags#随笔">
-    <span class="tag-code">随笔</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          一晃大半年又过去了，平时懒得博客也没写，虽然有时候总想写点什么，想想自己文采又不怎么样，就不了了之了。半年多了，感觉也没什么进步，公司项目还是老样子，感觉自己搭建的框架直接拿出来用完全都不用在改，没有激情。再者就是一直承诺把小沃做个2.0版出来，但是到现在也没完工，突然就觉得好失败。不写了这 ...
-        
-      </div>
-      <a class="more" href="/2016/08/25/恍恍惚惚大半年又过去了/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2016/01/10/2016-初见/">2016 初见</a>
-      </h2>
-      <p class="article-date">January 10, 2016</p>
-      
-        
-  <a href="/tags#随笔">
-    <span class="tag-code">随笔</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          不知不觉就到了2016年，看到很多开发者和认识的朋友都写一些年度总结，那我也尝试的写一些吧。2015年感觉都是碌碌无为，这一年里经历了亲人的离世，也经历了自己独自一人来深圳找工作，工作中遇到的坑爹的事情。年末11月份加入了现在这家做智能硬件的公司负责为公司当前硬件开发配套的Android A ...
-        
-      </div>
-      <a class="more" href="/2016/01/10/2016-初见/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2016/01/09/hello-world/">Hello World</a>
-      </h2>
-      <p class="article-date">January 9, 2016</p>
-      
-      <div class="article-summary">
-        
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer ...
-        
-      </div>
-      <a class="more" href="/2016/01/09/hello-world/">Read more</a>
-    </article>
-  
+    <main class="site-main posts-loop">
+    
+  <article>
 
   
-</main>
+    
+    <h3 class="article-title"><a href="/2018/02/10/2018年了/"><span>2018年了</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2018/02/10/2018年了/" rel="bookmark">
+        <time class="entry-date published" datetime="2018-02-10T06:53:20.000Z">
+          2018-02-10
+        </time>
+      </a>
+    </span>
+  </div>
 
 
-    <div class="scroll-top">
-  <span class="arrow-icon"></span>
-</div>
-    <footer class="app-footer">
-  <p class="copyright">
-    &copy; 2018 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>恍恍惚惚，一转眼18年又过了1个多月了，时间过得真快。</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/随笔/">随笔</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2016/12/22/AI-人工智能/"><span>AI-人工智能(长期编辑)</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2016/12/22/AI-人工智能/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-12-21T16:22:20.000Z">
+          2016-12-22
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>一、什么是人工智能<br>    关于人工智能想必大家基本是从2016Goole的Alpha GO大战韩国围棋顶级高手李世石开始有所关注吧，没错，我也是从这个时候才开始有所关注，本人也一直从事智能硬件行业，我们内部都将智能硬件称之为伪智能，因为这些硬件都是按照程序设定做相关简单的事情，说白了就是通过定时器加上大量判断逻辑做相关事情。</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2016/08/25/恍恍惚惚大半年又过去了/"><span>恍恍惚惚大半年又过去了</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2016/08/25/恍恍惚惚大半年又过去了/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-08-25T15:03:56.000Z">
+          2016-08-25
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>一晃大半年又过去了，平时懒得博客也没写，虽然有时候总想写点什么，想想自己文采又不怎么样，就不了了之了。半年多了，感觉也没什么进步，公司项目还是老样子，感觉自己搭建的框架直接拿出来用完全都不用在改，没有激情。再者就是一直承诺把小沃做个2.0版出来，但是到现在也没完工，突然就觉得好失败。不写了这些文字了，还是加油写小沃吧。</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/随笔/">随笔</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2016/01/10/2016-初见/"><span>2016 初见</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2016/01/10/2016-初见/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-01-10T15:08:50.000Z">
+          2016-01-10
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>不知不觉就到了2016年，看到很多开发者和认识的朋友都写一些年度总结，那我也尝试的写一些吧。<br>2015年感觉都是碌碌无为，这一年里经历了亲人的离世，也经历了自己独自一人来深圳找工作，工作中遇到的坑爹的事情。<br>年末11月份加入了现在这家做智能硬件的公司负责为公司当前硬件开发配套的Android App客户端，由于之前公司Android App存在很大的问题，整个项目不管是运行的稳定性，还是可扩展性都非常差，便向公司提出重写整个客户端，于是乎每天加班到12点，用了半个多月的时间写完了全部功能。现在回过头来想想确实很冲动，把自己那个半死来重新整个app实在不明智。项目里面与服务器交互模块采用了MVP的架构，蓝牙通信模块采用MVC来搭建，有时间到时候整理提取出来发到github上吧。</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/随笔/">随笔</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2016/01/09/hello-world/"><span>Hello World</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2016/01/09/hello-world/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-01-09T14:38:57.000Z">
+          2016-01-09
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+
+<nav class="pagination">
+  
+  
+</nav>
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
     <br>
-    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+    
+    &copy; 2018 Esen
+    
   </p>
 </footer>
-
-<script>
-  function async(u, c) {
-    var d = document, t = 'script',
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-    s.parentNode.insertBefore(o, s);
-  }
-</script>
-<script>
-  async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
-    FastClick.attach(document.body);
-  })
-</script>
-
-<script>
-  var hasLine = 'true';
-  async("//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js", function(){
-    $('figure pre').each(function(i, block) {
-      var figure = $(this).parents('figure');
-      if (hasLine === 'false') {
-        figure.find('.gutter').hide();
-      }
-      var lang = figure.attr('class').split(' ')[1] || 'code';
-      var codeHtml = $(this).html();
-      var codeTag = document.createElement('code');
-      codeTag.className = lang;
-      codeTag.innerHTML = codeHtml;
-      $(this).attr('class', '').empty().html(codeTag);
-      figure.attr('data-lang', lang.toUpperCase());
-      hljs.highlightBlock(block);
-    });
-  })
-</script>
-<!-- Baidu Tongji -->
-
-<script src="/js/script.js"></script>
-  </body>
+    
+  </div>
+</div>
+</body>
 </html>
