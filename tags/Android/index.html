@@ -1,101 +1,108 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.8.0">
+<head>
   <meta charset="utf-8">
   
-  <title>Android | Esen&#39;s Blog | A Programmer</title>
-
-  
-  <meta name="author" content="Esen">
-  
-
-  
+  <title>tag: Android | Esen&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Android JAVA GoLang 智能硬件">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Esen&#39;s Blog">
+<meta property="og:url" content="http://dev.aokod.com/tags/Android/index.html">
+<meta property="og:site_name" content="Esen&#39;s Blog">
+<meta property="og:description" content="Android JAVA GoLang 智能硬件">
+<meta property="og:locale">
+<meta property="article:author" content="Esen">
+<meta name="twitter:card" content="summary">
   
+    <link rel="alternate" href="/atom.xml" title="Esen&#39;s Blog" type="application/atom+xml">
+  
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0.css">
 
   
-
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="/lib/fancybox/dist/jquery.fancybox.min.css">
 
   
-
-  <meta property="og:site_name" content="Esen&#39;s Blog">
+<link rel="stylesheet" href="/css/main.css">
 
   
-  <meta property="og:image" content="/favicon.ico">
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+
   
-
-  <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Esen&#39;s Blog" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-</head>
-
-
+  
+  
+  
+<meta name="generator" content="Hexo 5.0.0"></head>
 <body>
-<div class="blog">
-  <div class="content">
-
-    <header>
-  <div class="site-branding">
-    <h1 class="site-title">
-      <a href="/">Esen&#39;s Blog</a>
-    </h1>
-    <p class="site-description">A Programmer</p>
-  </div>
-  <nav class="site-navigation">
-    <ul>
+  <div id="wrapper">
+    <header id="header" class="clearfix">
+	<a id="logo" href="/" title="Esen&#39;s Blog">Esen&#39;s Blog</a>
+	
+	<nav id="nav-menu" class="clearfix">
+		<form id="search" method="post" action="./" role="search">
+			<input id="search-input" type="text" name="s" class="inputbox" value="Search" onfocus="if (value =='Search'){value =''}" onblur="if (value ==''){value='Search'}">
+		</form>
+		<ul>
       
-        <li><a href="/">Home</a></li>
+				
+        <li><a class="main-nav-link" href="/">Home</a></li>
       
-        <li><a href="/archives">Archives</a></li>
+				
+        <li><a class="main-nav-link" href="/archives">Archives</a></li>
       
-    </ul>
-  </nav>
+		</ul>
+	</nav>
 </header>
-
-    <main class="site-main posts-loop">
-    
-
-<article>
-
-  <h2 class="article-title  tag">Android</h2>
-
-  <div class="archive">
-    
-      <div class="post archive">
-        <div class="archive-post">
-          <time datetime="2019-02-06T09:26:09.000Z">
-            <a href="/2019/02/06/Android-音视频编解码总结/">2019-02-06</a>
-          </time>
-          
-            <h3 class="archive-title"><a href="/2019/02/06/Android-音视频编解码总结/"><span>Android 音视频编解码总结</span></a></h3>
-          
-        </div>
-      </div>
-    
-    <nav class="pagination">
+    <section id="main" class="clearfix">
+  <article class="post-detail">
+    <h1 class="post-title"><a href="/">Android 音视频编解码总结</a></h1>
+    <ul class="post-meta">
+  <li><i class="fa fa-user"></i> Author Esen</li>
+  <li><i class="fa fa-calendar"></i> Date Feb 6</li>
+  <li><i class="fa fa-folder"></i> Categories
   
+    no_categories
   
-</nav>
-  </div>
+  </li>
+</ul>
+    <div class="post-content">
+      <pre><code>Android的音视频编解码网上已经有不少的文章可以学习，这里做一个总结。
+Android的音视频编解码可选方案有Android系统提供的MediaCodec，第三方FFMPEG。本文主要选取MediaCodec对视频硬解码做总结。
 
-</article>
-    </main>
+    一、MediaCodec主要是采用Android硬编解码，需要注意的几个地方：
 
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
-    <br>
-    
-    &copy; 2019 Esen
-    
-  </p>
-</footer>
-    
+        1、从摄像头采集的数据需要做旋转，以及格式转换
+        2、转换后注意高宽的变化
+        3、编码关键帧的时间间隔
+        4、编码后保留关键帧，P帧可丢弃来解决花屏现象
+        5、传输过程注意时序是数据包大小</code></pre>
+
+    </div>
+  </article>
+
+
+</section>
+    <footer id="footer" role="contentinfo">
+    <div>&copy; 2020 <a href="/">Esen&#39;s Blog</a>.
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Designed by <a href="http://rainylog.com" target="_blank">Rainy.</a>
+	</div>
+</footer><!-- end #footer -->
+
   </div>
-</div>
+  
+<script src="/lib/fancybox/dist/jquery.fancybox.min.js"></script>
+
+
+  
+<script src="/js/helper.js"></script>
+
+  
+<script src="/js/_third-party/gitment.js"></script>
+
 </body>
 </html>
